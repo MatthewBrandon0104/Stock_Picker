@@ -20,7 +20,8 @@ def picker(array)
         end
     end
     
-    puts "low day #{selection[0]} : high day #{selection[1]} : value #{value}"
+    puts [array.index(selection[0]), array.index(selection[1])]
+    puts "buy value #{selection[0]} : sell value #{selection[1]} : profit #{value}"
 end
 
 picker([17,3,6,9,15,8,6,1,10])
