@@ -7,7 +7,6 @@ def picker(array)
         while i < array.length
             if array[i] <= item
                 i += 1
-                puts "#{item} #{array[i]}" 
                 next
             end
             if array[i] - item > value
@@ -16,10 +15,8 @@ def picker(array)
                 value = array[i] - item
             end
             i += 1
-            
         end
     end
-    
     puts [array.index(selection[0]), array.index(selection[1])]
     puts "buy value #{selection[0]} : sell value #{selection[1]} : profit #{value}"
 end
