@@ -3,7 +3,7 @@ def picker(array)
     value = 0
     
     array.each do |item|
-        i = 0
+        i = array.index(item)
         while i < array.length
             if array[i] <= item
                 i += 1
